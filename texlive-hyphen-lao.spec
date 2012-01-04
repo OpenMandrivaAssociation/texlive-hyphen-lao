@@ -45,12 +45,12 @@ Current version is experimental and gives bad results.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-lao <<EOF
-%% from hyphen-lao:
+\%\% from hyphen-lao:
 lao loadhyph-lo.tex
 EOF
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-lao <<EOF
-%% from hyphen-lao:
+\%\% from hyphen-lao:
 \addlanguage{lao}{loadhyph-lo.tex}{}{1}{1}
 EOF
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
