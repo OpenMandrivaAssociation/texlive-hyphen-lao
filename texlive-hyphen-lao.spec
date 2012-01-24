@@ -5,8 +5,8 @@
 # catalog-license undef
 # catalog-version undef
 Name:		texlive-hyphen-lao
-Version:	20111103
-Release:	2
+Version:	20120124
+Release:	1
 Summary:	Lao hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
@@ -45,14 +45,16 @@ Current version is experimental and gives bad results.
 %install
 mkdir -p %{buildroot}%{_texmf_language_dat_d}
 cat > %{buildroot}%{_texmf_language_dat_d}/hyphen-lao <<EOF
-\%\% from hyphen-lao:
+\%% from hyphen-lao:
 lao loadhyph-lo.tex
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_dat_d}/hyphen-lao
 mkdir -p %{buildroot}%{_texmf_language_def_d}
 cat > %{buildroot}%{_texmf_language_def_d}/hyphen-lao <<EOF
-\%\% from hyphen-lao:
+\%% from hyphen-lao:
 \addlanguage{lao}{loadhyph-lo.tex}{}{1}{1}
 EOF
+perl -pi -e 's|\\%%|%%|;' %{buildroot}%{_texmf_language_def_d}/hyphen-lao
 mkdir -p %{buildroot}%{_texmf_language_lua_d}
 cat > %{buildroot}%{_texmf_language_lua_d}/hyphen-lao <<EOF
 -- from hyphen-lao:
