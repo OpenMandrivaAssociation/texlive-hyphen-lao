@@ -6,7 +6,7 @@
 # catalog-version undef
 Name:		texlive-hyphen-lao
 Version:	20120124
-Release:	7
+Release:	8
 Summary:	Lao hyphenation patterns
 Group:		Publishing
 URL:		http://tug.org/texlive
