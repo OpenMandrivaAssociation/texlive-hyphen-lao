@@ -9,7 +9,7 @@ Version:	20120124
 Release:	4
 Summary:	Lao hyphenation patterns
 Group:		Publishing
-URL:		http://tug.org/texlive
+URL:		https://tug.org/texlive
 License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/hyphen-lao.tar.xz
 BuildArch:	noarch
